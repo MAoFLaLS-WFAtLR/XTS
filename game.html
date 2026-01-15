@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石獅的記憶 - 遊戲中</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h2 id="chapterTitle">載入中...</h2>
+            <button id="menuBtn" class="header-btn">選單</button>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="game-ui">
+            <div id="hintText" class="hint-text"></div>
+            <button id="resetLevel" class="ui-btn">重置本關</button>
+        </div>
+
+        <div id="menuOverlay" class="overlay" style="display: none;">
+            <div class="overlay-content">
+                <h3>遊戲選單</h3>
+                <button id="resumeBtn" class="overlay-btn">繼續遊戲</button>
+                <button id="backToMenuBtn" class="overlay-btn">返回主選單</button>
+            </div>
+        </div>
+
+        <div id="completeOverlay" class="overlay" style="display: none;">
+            <div class="overlay-content">
+                <h3>關卡完成!</h3>
+                <p id="completeText"></p>
+                <button id="nextChapterBtn" class="overlay-btn">下一關</button>
+                <button id="backToMenuBtn2" class="overlay-btn">返回主選單</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/nodes-escape-converter.js"></script>
+    <script src="js/chapters.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
